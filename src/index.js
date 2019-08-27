@@ -15,7 +15,7 @@ function CounterDisplay({ count }) {
 }
 
 function CounterButton({ count, incrementOnClick }) {
-  // We pass the mutable state and increment function from the app to the button functoin
+  // We pass the mutable state and increment function from the app to the button function
   return <button onClick={incrementOnClick}>{count}</button>;
 }
 
