@@ -1,4 +1,4 @@
-// Lifting The State Up (React.js Example) by Dr. Derek Austin 🥳
+// Lifting State Up (React.js Example) by Dr. Derek Austin 🥳
 
 // Adapted from code by Kent C. Dodds and the React docs
 // https://kentcdodds.com/blog/application-state-management-with-react
@@ -20,7 +20,7 @@ function CounterButton({ count, incrementOnClick }) {
 }
 
 function Counter() {
-  // We lift the state up one level, from the component to the app
+  // We lift state up one level, from the component to the app
   const [count, setCount] = React.useState(0);
   const incrementCounter = () => setCount(current => current + 1);
   return (
