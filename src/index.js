@@ -27,6 +27,7 @@ function Counter() {
     <div>
       <CounterDisplay count={count} />
       <CounterButton count={count} incrementOnClick={incrementCounter} />
+      <h3>State is lifted from component to app level</h3>
     </div>
   );
 }
