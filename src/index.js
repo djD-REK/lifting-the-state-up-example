@@ -9,15 +9,18 @@ import ReactDOM from "react-dom";
 
 import "./styles.css";
 
-function CounterButton({ count, incrementOnClick }) {
-  return <button onClick={incrementOnClick}>{count}</button>;
-}
-
 function CounterDisplay({ count }) {
+  // We pass the mutable state to the counter display function
   return <h2>The current counter count is {count}</h2>;
 }
 
+function CounterButton({ count, incrementOnClick }) {
+  // We pass the mutable state and increment function from the app to the button functoin
+  return <button onClick={incrementOnClick}>{count}</button>;
+}
+
 function Counter() {
+  // We lift the state up one level, from the component to the app
   const [count, setCount] = React.useState(0);
   const incrementCounter = () => setCount(current => current + 1);
   return (
